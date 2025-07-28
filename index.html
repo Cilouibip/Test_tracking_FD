@@ -4,18 +4,22 @@
   <meta charset="UTF-8" />
   <title>Test de Validation - Funnel Doctor</title>
 
+  <!-- ÉTAPE 1 : Activation des logs de débogage AVANT le chargement du script -->
+  <script>
+    localStorage.setItem('FD_DEBUG', 'all');
+    console.log('[TEST_PAGE] FD_DEBUG a été activé.');
+  </script>
+
+  <!-- ÉTAPE 2 : Chargement du script avec la configuration complète et correcte -->
   <script defer
           src="https://t.scaale.it/snippet/loader.js"
-          data-fd-api-key="77f65ee0-636b-4d79-b47a-0e8ae762c444"
+          data-fd-api-key="77f65ee0-636b-4d79-b-b47a-0e8ae762c444"
           data-modules="bridging">
   </script>
 
-  <script>
-    localStorage.FD_DEBUG = 'all'; 
-  </script>
 </head>
 <body>
   <h1>Page de test pour le script de tracking</h1>
-  <p>Ouvrez la console (F12) pour voir les logs.</p>
+  <p>Ouvrez la console (F12) pour voir les logs de débogage.</p>
 </body>
 </html>
