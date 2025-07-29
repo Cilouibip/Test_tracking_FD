@@ -2,25 +2,30 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Test de Validation - Funnel Doctor</title>
+  <title>Test de Validation - FunnelDoctor</title>
 
-  <!-- ÉTAPE 1 : Activation des logs de débogage AVANT le chargement du script -->
+  <!-- Activation du mode debug pour voir les logs dans la console -->
   <script>
     localStorage.setItem('FD_DEBUG', 'all');
-    console.log('[TEST_PAGE] FD_DEBUG a été activé.');
   </script>
 
-  <!-- ÉTAPE 2 : Chargement du script avec la configuration complète et correcte -->
-  <!-- On utilise l'URL de prévisualisation de Vercel -->
+  <!-- 
+    Snippet de Tracking FunnelDoctor FINAL pour le test.
+    - Pointeur vers le script de production sur app.scaale.it.
+    - Chargement du module "bridging.js" (sans sous-dossier).
+    - Utilisation de la clé API de test validée.
+  -->
   <script defer
-          src="https://funnel-doctor-git-youtube-vues-dc1b36-mehdis-projects-d7b5d796.vercel.app/loader.js"
+          src="https://app.scaale.it/loader.js"
           data-fd-api-key="77f65ee0-636b-4d79-b47a-0e8ae762c444"
-          data-modules="modules/bridging.js">
+          data-modules="bridging.js">
   </script>
 
 </head>
 <body>
   <h1>Page de test pour le script de tracking</h1>
-  <p>Ouvrez la console (F12) pour voir les logs de débogage.</p>
+  <p>
+    Ouvrez la console (F12) pour voir les logs de débogage.
+  </p>
 </body>
 </html>
