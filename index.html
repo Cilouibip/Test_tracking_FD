@@ -2,22 +2,24 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Test de Validation - FunnelDoctor</title>
+  <title>Test de Validation Final - FunnelDoctor</title>
 
-  <!-- Activation du mode debug pour voir les logs dans la console -->
+  <!-- Activation du mode debug pour voir tous les logs dans la console -->
   <script>
     localStorage.setItem('FD_DEBUG', 'all');
   </script>
 
   <!-- 
-    Snippet de Tracking FunnelDoctor FINAL pour le test.
-    - Pointeur vers le script de production sur app.scaale.it.
-    - Chargement du module "bridging.js" (sans sous-dossier).
-    - Utilisation de la clé API de test validée.
+    Snippet de Tracking FunnelDoctor - Version FINALE et COMPLÈTE
+    - Pointeur vers le script de production sur app.scaale.it
+    - Chargement du module "bridging.js"
+    - Utilisation de la clé API de test
+    - Spécification de l'endpoint de l'API de production
   -->
   <script defer
           src="https://app.scaale.it/loader.js"
           data-fd-api-key="77f65ee0-636b-4d79-b47a-0e8ae762c444"
+          data-api-endpoint="https://app.scaale.it/api/touchpoints"
           data-modules="bridging.js">
   </script>
 
@@ -25,7 +27,7 @@
 <body>
   <h1>Page de test pour le script de tracking</h1>
   <p>
-    Ouvrez la console (F12) pour voir les logs de débogage.
+    Ouvrez la console (F12) pour voir les logs de débogage et l'onglet Réseau.
   </p>
 </body>
 </html>
